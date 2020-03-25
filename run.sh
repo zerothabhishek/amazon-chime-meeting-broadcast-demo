@@ -58,7 +58,7 @@ firefox \
   --first-startup \
   --foreground \
   --kiosk \
-  --ssb "${BROWSER_URL}" \
+  --ssb \
   "${BROWSER_URL}" \
   &
 sleep 0.5  # Ensure this has started before moving on
