@@ -1,6 +1,6 @@
-# Chime Meeting Broadcast Demo
+# Amazon Chime Meeting Broadcast Demo
 
-This repository contains a Docker container that, when started, will join a Chime meeting by PIN and broadcast the meeting's audio and video in high definition (1080p at 30fps) to an RTMP endpoint you specify. The broadcast participant joins the meeting in the muted state. The meeting PIN must be unlocked in order for the broadcast participant to join the meeting.
+This repository contains a Docker container that, when started, will join a Amazon Chime meeting by PIN and broadcast the meeting's audio and video in high definition (1080p at 30fps) to an RTMP endpoint you specify. The broadcast participant joins the meeting in the muted state. The meeting PIN must be unlocked in order for the broadcast participant to join the meeting.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ You will need Docker and `make` installed on your system. As this container is r
 
 The input for the container is a file called `container.env`. You create this file by copying the `container.env.template` to `container.env` and filling in the following variables:
  
-* `MEETING_PIN`: the PIN for the Chime meeting you wish to broadcast (without any spaces in it)
+* `MEETING_PIN`: the PIN for the Amazon Chime meeting you wish to broadcast (without any spaces in it)
   * Example: `1234567890`
 * `RTMP_URL`: the URL of the RTMP endpoint,
   * Twitch example: `rtmp://live-iad05.twitch.tv/app/<stream key>`
@@ -30,7 +30,7 @@ Once you have configured the `container.env` file, run the container:
 $ make run
 ```
  
-The container will start up and join the given Chime meeting as the `<Broadcast>` attendee and start streaming H.264/AAC in FLV format to the given RTMP endpoint.
+The container will start up and join the given Amazon Chime meeting as the `<Broadcast>` attendee and start streaming H.264/AAC in FLV format to the given RTMP endpoint.
 
 When your broadcast has finished, stop the stream by killing the container:
 
