@@ -13,7 +13,7 @@ The input for the container is a file called `container.env`. You create this fi
 * `MEETING_PIN`: the PIN for the Amazon Chime meeting you wish to broadcast (without any spaces in it)
   * Example: `1234567890`
 * `RTMP_URL`: the URL of the RTMP endpoint,
-  * Twitch example: `rtmp://live-iad05.twitch.tv/app/<stream key>`
+  * Twitch example: `rtmp://live.twitch.tv/app/<stream key>`
   * YouTube Live example: `rtmp://a.rtmp.youtube.com/live2/<stream key>`
 
 ## Running
