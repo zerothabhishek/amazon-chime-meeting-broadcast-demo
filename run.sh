@@ -96,5 +96,7 @@ ffmpeg \
     -b:a ${AUDIO_BITRATE} \
     -ac ${AUDIO_CHANNELS} \
     -ar ${AUDIO_SAMPLERATE} \
-  -f flv ${RTMP_URL}
+  /data/${OUTPUT_FILE}
 
+# TO timeout, put this before the output line
+# -t 60 \
